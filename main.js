@@ -110,9 +110,15 @@ yellow.onclick=function(){
 }
 thin.onclick=function(){
   lineWidth=5
+  eraserEnabled=true
+  thin.classList.add('active')
+  thick.classList.remove('active')
 }
 thick.onclick=function(){
   lineWidth=10
+  eraserEnabled=true
+  thick.classList.remove('active')
+  thick.classList.add('active')
 }
 /*****************/
 

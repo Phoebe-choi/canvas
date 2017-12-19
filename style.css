@@ -77,19 +77,8 @@ ul,ol{
   top:10px;
 }
 .sizes > li{
-  margin: 0 9px;
+  margin: 13 9px;
 }
-/* .sizes> .thin{
-  width: 11px;
-  height: 11px;
-  border-top: 3px solid linear-gradient(to bottom, #cecece 0%,#000000 100%);
-}
-.sizes> .thick{
-width: 14px;
-height: 14px;
-border-radius: 50%;
-background: linear-gradient(to bottom, #cecece 0%,#000000 100%); 
-}   */
 .sizes > .thin{
   height: 0;
   width: 20px;
