@@ -3,7 +3,7 @@ body{
 }
 #xxx{
   background:green;
-    display:block;
+  display:block;
 }
 .actions{
   position:fixed;
