@@ -30,7 +30,8 @@ ul,ol{
   width: 1.9em;
   height: 1.9em;
   transition: all 0.3s;
-  margin:0px 11px;  
+  margin:0px 11px;
+  cursor: pointer;  
 }  
 .actions svg.active{
   fill: #fa3636;
@@ -77,17 +78,20 @@ ul,ol{
   top:10px;
 }
 .sizes > li{
-  margin: 13 9px;
+  margin: 13px 9px;
+  cursor: pointer;
 }
 .sizes > .thin{
   height: 0;
   width: 20px;
   border-top: 3px solid #444141;
   border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,1.2); 
 }
 .sizes > .thick{
   height: 0;
   width: 20px;
   border-top: 6px solid #444141;
   border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0,0,0,1.2); 
 }

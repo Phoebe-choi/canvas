@@ -27,13 +27,14 @@ eraser.onclick=function(){
 }
 clear.onclick=function(){
   context.clearRect(0,0,canvas.width,canvas.height);
-  eraserEnabled=true  
+  eraserEnabled=false
   clear.classList.add('active')  
   eraser.classList.remove('active')
   pen.classList.remove('active')
   save.classList.remove('active')  
 }
 save.onclick=function(){
+  eraserEnabled=false
   var url=canvas.toDataURL("image/png")
   var a=document.createElement('a')
   document.body.appendChild(a)
@@ -110,15 +111,9 @@ yellow.onclick=function(){
 }
 thin.onclick=function(){
   lineWidth=5
-  eraserEnabled=true
-  thin.classList.add('active')
-  thick.classList.remove('active')
 }
 thick.onclick=function(){
   lineWidth=10
-  eraserEnabled=true
-  thick.classList.remove('active')
-  thick.classList.add('active')
 }
 /*****************/
 
