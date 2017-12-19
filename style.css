@@ -1,21 +1,104 @@
 body{
   margin:0px;
+  overflow: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+.icon{
+  width: 1em; 
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: #2b2a2a;
+  overflow: hidden;
 }
 #xxx{
-  background:green;
+  background:white;
   display:block;
 }
 .actions{
   position:fixed;
-  bottom:0;
-  left:0;
+  bottom:-2px;
+  left:60px;
+  padding: 20px;
 }
-.actions>#brush{
-  display: none;
+.actions svg{
+  width: 1.9em;
+  height: 1.9em;
+  transition: all 0.3s;
+  margin:0px 11px;  
+}  
+.actions svg.active{
+  fill: #fa3636;
+  transform: scale(1.2);
 }
-.actions.x>#brush{
-  display: inline-block;
+.colors{
+  position: fixed;
+  top:55px;
+  left: 25px;
 }
-.actions.x>#eraser{
-  display: none;
+.colors> li{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  margin: 11px 0;
+  transition: all 0.3s;
+}
+.colors> li.black{
+  background: rgb(14, 13, 13);
+}
+.colors> li.gray{
+  background: rgb(105, 105, 105);
+}
+.colors> li.red{
+  background: rgb(230, 86, 76);
+}
+.colors> li.green{
+  background: rgb(119, 196, 119);
+}
+.colors> li.blue{
+  background: rgb(80, 120, 196);
+}
+.colors> li.yellow{
+  background: rgb(250, 238, 128);
+}
+.colors> li.active{
+  box-shadow: 0 0 3px rgba(0,0,0,1.2); 
+  transform: scale(1.1);
+}
+.sizes{
+  position: fixed;
+  right:10px;
+  top:10px;
+}
+.sizes > li{
+  margin: 0 9px;
+}
+/* .sizes> .thin{
+  width: 11px;
+  height: 11px;
+  border-top: 3px solid linear-gradient(to bottom, #cecece 0%,#000000 100%);
+}
+.sizes> .thick{
+width: 14px;
+height: 14px;
+border-radius: 50%;
+background: linear-gradient(to bottom, #cecece 0%,#000000 100%); 
+}   */
+.sizes > .thin{
+  height: 0;
+  width: 20px;
+  border-top: 3px solid #444141;
+  border-radius: 3px;
+}
+.sizes > .thick{
+  height: 0;
+  width: 20px;
+  border-top: 6px solid #444141;
+  border-radius: 2px;
 }
