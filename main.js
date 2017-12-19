@@ -42,7 +42,7 @@ save.onclick=function(){
   a.save='我的画'
   a.target='_blank'
   a.click()
-  eraserEnabled=true  
+  eraserEnabled=false
   save.classList.add('active')
   clear.classList.remove('active')  
   eraser.classList.remove('active')
@@ -118,12 +118,12 @@ thick.onclick=function(){
 /*****************/
 
 function autoSetCanvasSize(canvas) {
-  setConvasSize()
+  setCanvasSize()
   window.onresize = function() {
-    setConvasSize()
+    setCanvasSize()
   }
 
-  function setConvasSize() {
+  function setCanvasSize() {
     var pageWidth = document.documentElement.clientWidth
     var pageHeight = document.documentElement.clientHeight
     canvas.width = pageWidth
