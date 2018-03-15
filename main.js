@@ -40,7 +40,7 @@ save.onclick=function(){
   var a=document.createElement('a')
   document.body.appendChild(a)
   a.href=url
-  a.save='我的画'
+  a.save='请保存您的图片:'
   a.target='_blank'
   a.click()
   eraserEnabled=false
