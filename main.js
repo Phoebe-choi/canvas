@@ -11,9 +11,9 @@ listenToUser(canvas)
 
 
 
-var eraserEnabled = false
+// var eraserEnabled = false
 pen.onclick=function(){
-  eraserEnabled=false
+  var eraserEnabled=false
   pen.classList.add('active')
   eraser.classList.remove('active')
   clear.classList.remove('active')
@@ -116,7 +116,6 @@ thin.onclick=function(){
 thick.onclick=function(){
   lineWidth=10
 }
-/*****************/
 
 function autoSetCanvasSize(canvas) {
   setCanvasSize()

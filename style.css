@@ -22,6 +22,7 @@ ul,ol{
   position: fixed;
   top:0;
   left: 0;
+  left: 0;
 }
 .actions{
   position:fixed;
@@ -86,15 +87,15 @@ ul,ol{
 }
 .sizes > .thin{
   height: 0;
-  width: 20px;
-  border-top: 3px solid #444141;
+  width: 20kbpx;
+  border-top: 5px solid #444141;
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0,0,0,1.2); 
 }
 .sizes > .thick{
   height: 0;
   width: 20px;
-  border-top: 6px solid #444141;
+  border-top: 8px solid #444141;
   border-radius: 2px;
   box-shadow: 0 0 2px rgba(0,0,0,1.2); 
 }
